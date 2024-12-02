@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puzzle Game</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1> Sliding Puzzle Game</h1>
-        <div id="puzzle-container"></div>
-        <button id="shuffle">Randomize</button>
+    <div class="flex">
+
+        <div class="left">
+            <ul class="game-names">
+                <li onclick="setPuzzleGame()">Puzzle game</li>
+                <li onclick="setTicTacToeGame()">Tic-Tac-Toe</li>
+            </ul>
+        </div>
+        
+        <div id="game-container" class="container">
+            <h1> Sliding Puzzle Game</h1>
+    
+            <div id="puzzle-container"></div>
+            <button id="shuffle">Randomize</button>
+        </div>
+
+        <div></div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
